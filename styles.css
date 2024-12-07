@@ -282,7 +282,7 @@ ul.invisible-list li {
     left: 87%;
 }
 
-.autoIMG{
+.autoIMG:hover{
     filter:
     drop-shadow(0px 0px 8px white);
 }
