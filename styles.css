@@ -280,6 +280,8 @@ ul.invisible-list li {
     position: absolute;
     top: 10%;
     left: 87%;
+    filter:
+    drop-shadow(0px 0px 8px white);
 }
 .menu-button{
     position: absolute;
