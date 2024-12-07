@@ -1,0 +1,95 @@
+<html>
+    <link rel="stylesheet" href="styles.css">
+    <base target="main_">
+    <header class="header">
+    <A href="index.html" class="logo"><img src="logoWH.png" alt="домашняя страница" width="100%" height="100%"></A> 
+    <input autocomplete="off" id="searchInput" class="large-input" maxlength="300" placeholder="     Найти на BurpilaStore" >
+    <button class="button" onclick="authorization1()"><img src="loop.png" width="80" height="65" class="log" ></button>
+    <A href="authorization.html" class="auto"><img src="person.png" alt="авторизация" width="100" height="100"></A> 
+    <button onclick="menu()" class="Menu-Button" id="Menu-Button"><img src="menu.png" width="80" height="65" class="log" ></button>
+    </header>
+    <div id="modal" class="modal notdisplay" >
+        <div class="modal-content">
+                <ul class="invisible-list" >
+                    <li><A href="index.html" class="down"><button class="but"></A> </li>
+                    <li><A href="index.html" class="down"><button class="but"></A> </li>
+                    <li><A href="index.html" class="down"><button class="but"></A> </li>
+                </ol>
+        </div>
+    </div>
+
+    <div class="mainframe">
+        <div class="Preview PreviewX PreviewY">
+            <font face="Century Gothic">
+            <img src="heart.png" alt="изображение товара" class="imgPR">
+            <label class="labelPRcost"> 600₽  <s class="small">1000₽</s></label>
+            <label class="labelPRN">Трусы с сердечками
+            </label>
+            <label class="labelPR">BurpilaIndustries/производитель всего</label>
+            <button class="buttonPR" onclick="location.href='product.html'">Перейти к товару</button>
+            </font>
+        </div>
+        <div class="Preview PreviewX1 PreviewY">
+            <font face="Century Gothic">
+            <img src="common.png" alt="изображение товара" class="imgPR" id="a">
+            <label class="labelPRcost"> 300₽  <s class="small">800₽</s></label>
+            <label class="labelPRN">Трусы обыкновенные</label>
+            <label class="labelPR">BurpilaIndustries/производитель всего</label>
+            <button class="buttonPR" onclick="RikHolder('a')">Перейти к товару</button>
+            </font>
+        </div>
+        <div class="Preview PreviewX2 PreviewY">
+            <font face="Century Gothic">
+            <img src="strings.png" alt="изображение товара" class="imgPR" id="b">
+            <label class="labelPRcost"> 500₽  <s class="small">1000₽</s></label>
+            <label class="labelPRN">Трусики чёрные</label>
+            <label class="labelPR">BurpilaIndustries/производитель всего</label>
+            <button class="buttonPR" onclick="RikHolder('b')">Перейти к товару</button>
+            </font>
+        </div>
+        <div class="Preview PreviewX3 PreviewY">
+            <font face="Century Gothic">
+            <img src="stringspink.png" alt="изображение товара" class="imgPR" id="c">
+            <label class="labelPRcost"> 800₽  <s class="small">1500₽</s></label>
+            <label class="labelPRN">Трусики розовые</label>
+            <label class="labelPR">BurpilaIndustries/производитель всего</label>
+            <button class="buttonPR" onclick="RikHolder('c')">Перейти к товару</button>
+            </font>
+        </div>
+
+    </div>
+
+    <script>
+
+function RikHolder(name)
+{
+    document.getElementById(name).src = "Rik.gif";
+}
+
+function authorization1()
+{
+    let a = document.cookie;
+    alert(document.cookie);
+}
+function registr()
+{
+    document.cookie = "authorized=tr21";
+    alert(document.cookie);
+}
+
+function menu()
+{
+    if(document.getElementById("modal").classList.contains("notdisplay"))
+    {
+        document.getElementById("modal").classList.remove("notdisplay");
+    }
+    else
+    {
+        document.getElementById("modal").classList.add("notdisplay");
+    }
+}
+
+
+    </script>
+</body>
+</html>

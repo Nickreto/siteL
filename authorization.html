@@ -1,0 +1,48 @@
+<html>
+    <link rel="stylesheet" href="styles.css">
+    <base target="main_">
+    <header class="header">
+    <A href="index.html" class="logo"><img src="logoWH.png" alt="домашняя страница" width="100%" height="100%"></A>
+
+</header>
+<div class="mainframe">
+    <form class="form cool-input" >
+            <label class="center"><p>Авторизация</p></label>
+            <input placeholder="  Ваша фамилия" class="size cool-input" id="name" ><br><br>
+            <input placeholder="  Ваше имя" class="size  cool-input" id="secondname" ><br><br>
+            <input placeholder="  Ваш город" class="size cool-input" id="city" > <br><br>
+            <label>Выберите Пол</label><br>
+            <select id="dropdown" name="dropdown" required class="size1 cool-input">
+                <option value="option1">Мужчина</option>
+                <option value="option2">Женщина</option>
+            </select>
+            <label>
+                <ol>
+                    <li>Я прочитал <A href="Document.doc" >Политику компании</A> и согласен со всеми пунктами</li>
+                    <li>Я обязуюсь не совершать мошеннеческих схем на платформе</li>
+                    <li>Создатель сайта молодец</li>
+                </ol>
+                <input type="checkbox" id="agreement" >
+                Я согласен с выше перечисленными пунктами
+            </label> <br><br>
+            <button onclick="Send()">Создать аккаунт</button>
+            
+
+    </form>
+
+</div>
+<script>
+function Send()
+{
+    if (document.getElementById("agreement").checked){
+    let name = document.getElementById("name").value;
+    let secondname = document.getElementById("secondname").value;
+    let city = document.getElementById("city").value;
+    alert(name + " "+ secondname + " из города " + city + ", ваши данные отправленны");
+    }
+    else{
+    alert("Вы не согласились с нашей политикой");
+    }
+}
+</script>
+</html>
