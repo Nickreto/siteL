@@ -280,6 +280,9 @@ ul.invisible-list li {
     position: absolute;
     top: 10%;
     left: 87%;
+}
+
+.autoIMG{
     filter:
     drop-shadow(0px 0px 8px white);
 }
